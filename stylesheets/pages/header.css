@@ -158,12 +158,12 @@ select {
 .menu-bar-grid {
   font-size: 12px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  margin-left: 20px;
 }
 .menu-bar-grid li {
   text-align: center;
   display: inline-block;
+  margin-right: 16px;
 }
 .myCoupang-area .dropdown-menu {
   display: none;
@@ -191,6 +191,7 @@ select {
   margin-top: 5px;
   position: relative;
   border-radius: 0.4em;
+  padding: 2px;
   border: 1px solid var(--color-gray-300);
 }
 .search-bar-form {
@@ -230,4 +231,14 @@ select {
   left: 70%;
   pointer-events: none; /* 클릭 막기 → select로만 클릭감 */
   z-index: 1;
+}
+.cart::after {
+  display: block;
+  margin-left: 30px;
+  background-color: var(--color-blue-600);
+  border-radius: 50%;
+  content: "0";
+  width: 18px;
+  height: 18px;
+  color: var(--color-white);
 }
