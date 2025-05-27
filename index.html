@@ -17,76 +17,124 @@
   </head>
 
   <body>
-    <nav class="login-bar">
-      <ul class="login-menu">
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
-        <li><a href="#">고객센터</a></li>
-        <li><a href="#">쿠팡플레이</a></li>
-        <li><a href="#">제휴마케팅</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <button class="button--category">
-        <span class="icon"></span>
-        카테고리
-      </button>
-      <div class="pang">
-        <h1>
-          <a
-            href="https://www.coupang.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="logo"
-          >
-            <span class="visually-hidden">Coupang</span>
-          </a>
-        </h1>
+    <header>
+      <nav class="login-bar">
+        <ul class="login-menu">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">쿠팡플레이</a></li>
+          <li><a href="#">제휴마케팅</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <button class="button--category">
+          <span class="icon"></span>
+          카테고리
+        </button>
+        <div class="pang">
+          <h1>
+            <a
+              href="https://www.coupang.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="logo"
+            >
+              <span class="visually-hidden">Coupang</span>
+            </a>
+          </h1>
+        </div>
+        <div class="search-bar">
+          <form class="search-bar-form">
+            <div class="custom-select">
+              <select
+                id="category-search"
+                name="category"
+                aria-label="상품 카테고리 선택"
+              >
+                <option value="">전체</option>
+                <option value="electronics">전자제품</option>
+                <option value="fashion">패션</option>
+                <option value="beauty">뷰티</option>
+                <option value="food">식품</option>
+                <option value="sports">스포츠</option>
+              </select>
+
+              <div class="svgBox">
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 0H0L4.69565 6L9 0Z"
+                    fill="var(--color-gray-700)"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <input
+                type="search"
+                name="keyword"
+                required
+                placeholder="찾고 싶은 상품을 검색해 보세요!"
+                aria-label="검색어 입력"
+              />
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn-search-voice"
+                aria-label="음성 검색"
+              ></button>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="btn-search-submit"
+                aria-label="검색"
+              ></button>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="icon-center myCoupang-area">
+            <div class="myCoupang"></div>
+            마이쿠팡
+            <div class="dropdown-menu">
+              <ul>
+                <li>주문목록</li>
+                <li>취소/반품</li>
+                <li>찜리스트</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="icon-center cart-area">
+            <div class="cart"></div>
+            장바구니
+            <div class="cart-empty-msg">장바구니에 담긴 상품이 없습니다.</div>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <ul class="menu-bar-grid">
+            <li><a href="#">로켓배송</a></li>
+            <li><a href="#">로켓프레시</a></li>
+            <li><a href="#">2022년 설날</a></li>
+            <li><a href="#">로켓직구</a></li>
+            <li><a href="#">골드박스</a></li>
+            <li><a href="#">정기배송</a></li>
+            <li><a href="#">이벤트/쿠폰</a></li>
+            <li><a href="#">기획전</a></li>
+            <li><a href="#">여행티켓</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="search-bar">
-        <form>
-          <select
-            id="category-search"
-            name="category"
-            aria-label="상품 카테고리 선택"
-          >
-            <option value="">전체</option>
-            <option value="electronics">전자제품</option>
-            <option value="fashion">패션</option>
-            <option value="beauty">뷰티</option>
-            <option value="food">식품</option>
-            <option value="sports">스포츠</option>
-          </select>
-          <svg
-            width="9"
-            height="6"
-            viewBox="0 0 9 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M9 0H0L4.69565 6L9 0Z" fill="#767676" />
-          </svg>
-        </form>
-      </div>
-      <div>
-        <div class="span-center"><span class="myCoupang"></span>마이쿠팡</div>
-      </div>
-      <div>
-        <div class="span-center"><span class="cart"></span>장바구니</div>
-      </div>
-    </div>
-    <div class="menu-bar">
-      <ul class="menu-bar-grid">
-        <li><a href="#">로켓배송</a></li>
-        <li><a href="#">로켓프레시</a></li>
-        <li><a href="#">2022년 설날</a></li>
-        <li><a href="#">로켓직구</a></li>
-        <li><a href="#">골드박스</a></li>
-        <li><a href="#">정기배송</a></li>
-        <li><a href="#">이벤트/쿠폰</a></li>
-        <li><a href="#">기획전</a></li>
-        <li><a href="#">여행티켓</a></li>
-      </ul>
-    </div>
+    </header>
   </body>
 </html>
